@@ -1,26 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Calculator app</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Frontend Mentor | Calculator app</title>
 
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="app">
+      <header class="header">
+        <p class="header__logo">calc</p>
+        <div class="themes">
+          <p class="themes__text"></p>
+          <div class="themes__container">
+            <div class="themes__container--numbers">
+              <p class="themes__number">1</p>
+              <p class="themes__number">2</p>
+              <p class="themes__number">3</p>
+            </div>
+            <button class="themes__toggle">
+              <span class="themes__toggle--indicator"></span>
+            </button>
+          </div>
+        </div>
+      </header>
+      <section class="display">
+        <div class="display__container"></div>
+      </section>
+      <section class="inputs">
+        <button class="input">7</button>
+        <button class="input">8</button>
+        <button class="input">9</button>
+        <button class="input">Del</button>
+        <button class="input">4</button>
+        <button class="input">5</button>
+        <button class="input">6</button>
+        <button class="input">+</button>
+        <button class="input">1</button>
+        <button class="input">2</button>
+        <button class="input">3</button>
+        <button class="input">-</button>
+        <button class="input">.</button>
+        <button class="input">0</button>
+        <button class="input">/</button>
+        <button class="input">*</button>
+        <button class="input">Reset</button>
+        <button class="input">=</button>
+      </section>
+    </div>
 
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </body>
 </html>
