@@ -1,0 +1,56 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* ### Theme 1
+
+#### Backgrounds
+
+- Very dark desaturated blue (main background): hsl(222, 26%, 31%)
+- Very dark desaturated blue (toggle background, keypad background): hsl(223, 31%, 20%)
+- Very dark desaturated blue (screen background): hsl(224, 36%, 15%)
+
+#### Keys
+
+- Desaturated dark blue (key background): hsl(225, 21%, 49%)
+- Desaturated dark blue (key shadow): hsl(224, 28%, 35%)
+
+- Red (key background, toggle): hsl(6, 63%, 50%)
+- Dark red (key shadow): hsl(6, 70%, 34%)
+
+- Light grayish orange (key background): hsl(30, 25%, 89%)
+- Grayish orange (key shadow): hsl(28, 16%, 65%)
+
+#### Text
+
+- Very dark grayish blue: hsl(221, 14%, 31%)
+- White: hsl(0, 0%, 100%) */
+
+html {
+  /* 1rem = 10px */
+  font-size: 62.5%;
+  font-family: 'League Spartan', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+:root {
+  --color-white: hsl(0, 0%, 100%);
+  --color-blue-100: hsl(222, 26%, 31%);
+  --color-blue-200: hsl(223, 31%, 20%);
+  --color-blue-300: hsl(224, 36%, 15%);
+
+  --color-blue-400: hsl(225, 21%, 49%);
+  --color-blue-500: hsl(224, 36%, 15%);
+
+  --color-blue-600: hsl(221, 14%, 31%);
+
+  --color-red-100: hsl(6, 63%, 50%);
+  --color-red-200: hsl(6, 70%, 34%);
+
+  --color-grey-100: hsl(30, 25%, 89%);
+  --color-grey-200: hsl(28, 16%, 65%);
+}
