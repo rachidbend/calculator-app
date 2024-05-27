@@ -31,26 +31,116 @@
 html {
   /* 1rem = 10px */
   font-size: 62.5%;
-  font-family: 'League Spartan', sans-serif;
+  font-family: var(--font-main);
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
 }
 
 :root {
+  --font-main: 'League Spartan', sans-serif;
   --color-white: hsl(0, 0%, 100%);
+  /* (main background) */
   --color-blue-100: hsl(222, 26%, 31%);
+  /* (toggle background, keypad background) */
   --color-blue-200: hsl(223, 31%, 20%);
+  /* (screen background) */
   --color-blue-300: hsl(224, 36%, 15%);
-
+  /* (key background) */
   --color-blue-400: hsl(225, 21%, 49%);
-  --color-blue-500: hsl(224, 36%, 15%);
-
+  /* (key shadow) */
+  --color-blue-500: hsl(224, 28%, 35%);
+  /* text */
   --color-blue-600: hsl(221, 14%, 31%);
 
+  /* (key background, toggle) */
   --color-red-100: hsl(6, 63%, 50%);
+  /* (key shadow) */
   --color-red-200: hsl(6, 70%, 34%);
 
+  /* (key background) */
   --color-grey-100: hsl(30, 25%, 89%);
+  /* (key shadow): */
   --color-grey-200: hsl(28, 16%, 65%);
+}
+
+.body {
+  height: 100vh;
+  height: 100svh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--color-blue-100);
+}
+
+.app {
+  max-width: 54rem;
+  height: auto;
+
+  display: flex;
+  flex-direction: column;
+}
+
+/* HEADER */
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+.header__logo {
+  font-size: 3.2rem;
+  color: var(--color-white);
+  letter-spacing: -0.01em;
+}
+
+/* THEMES */
+.themes {
+  display: flex;
+  align-items: center;
+  gap: 2.8rem;
+}
+.themes__text {
+  font-size: 1.2rem;
+  letter-spacing: 0.08em;
+  color: var(--color-white);
+  text-transform: uppercase;
+}
+.themes__container {
+}
+.themes__container--numbers {
+  display: flex;
+  justify-content: space-around;
+  width: 7rem;
+}
+.themes__number {
+  font-size: 1.5rem;
+  color: var(--color-white);
+}
+.themes__toggle {
+  width: 7rem;
+  height: 2.6rem;
+  background-color: var(--color-blue-200);
+  border: none;
+  border-radius: 5rem;
+  position: relative;
+  cursor: pointer;
+}
+.themes__toggle--indicator {
+  position: absolute;
+  display: inline-block;
+  top: 50%;
+  transform: translate(0.4rem, -50%);
+  left: 0;
+  width: 1.8rem;
+  height: 1.8rem;
+  border-radius: 5rem;
+  background-color: var(--color-red-100);
+}
+/* attribution */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }
