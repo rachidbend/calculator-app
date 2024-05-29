@@ -195,3 +195,21 @@ function calculate(string) {
     return 'Error';
   }
 }
+
+// Theme functionality
+const bodyElement = document.querySelector('.body');
+const themeButton = document.querySelector('.themes__toggle');
+
+themeButton.addEventListener('click', function (e) {
+  const theme = +bodyElement.classList[1].split('-')[1];
+  const max = 3;
+  // if the current theme number is the max, then change it into 1
+  if (theme === max) {
+    bodyElement.classList.remove(`theme-${theme}`);
+    bodyElement.classList.add(`theme-1`);
+  } else {
+    // add 1 to the current theme number
+    bodyElement.classList.remove(`theme-${theme}`);
+    bodyElement.classList.add(`theme-${theme + 1}`);
+  }
+});
