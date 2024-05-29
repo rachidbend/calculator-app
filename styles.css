@@ -356,6 +356,11 @@ html {
 .theme-3 .key--equals:active {
   background-color: var(--color-red-300);
 }
+
+button {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
 /* attribution */
 .attribution {
   font-size: 11px;
